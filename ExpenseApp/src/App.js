@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
 
-function App() {
+const  App = () => {
   const expenses = [
     {
       id: 'el',
@@ -27,11 +27,8 @@ function App() {
 
   return (
     <div>
-      <h2> Let's get started!
-        <ExpenseItem title= {expenses[1].title} price = {expenses[1].amount} date= {expenses[1].date}></ExpenseItem>
-        <ExpenseItem title= {expenses[0].title} price = {expenses[0].amount} date= {expenses[0].date}></ExpenseItem>
-        <ExpenseItem title= {expenses[2].title} price = {expenses[2].amount} date= {expenses[2].date}></ExpenseItem>
-      </h2>
+      <h2> Let's get started!</h2>
+      <Expenses items={expenses} />
     </div>
     
   );
