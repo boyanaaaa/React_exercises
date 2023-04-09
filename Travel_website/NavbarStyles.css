@@ -6,6 +6,11 @@
    box-shadow: 0 5px 15px 0 rgb(0, 0, 0, .25); 
    width: 95%;
    border-radius: 13px;
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translate(-50%);
+   z-index: 9999;
 }
 
 .navbar-logo{
@@ -85,6 +90,8 @@
         align-items: strech;
         padding: 80px 0 30px 0;
         margin: 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
         
      }
 
@@ -92,6 +99,7 @@
         left:0;
         opacity: 1;
         z-index: -1;
+        transition: 0.3s ease-in-out;
      }
 
      .nav-links{
@@ -102,8 +110,10 @@
      }
 
      .nav-links:hover{
+        padding: 20px 40px;
         background: #01959a;
         transition: none;
+        
      }
 
      .nav-links-mobile{
@@ -112,7 +122,7 @@
         padding: 1.5rem;
         margin: auto;
         border-radius: 4px;
-        width: 80%;
+        width: 100%;
         background: #01959a;
         text-decoration: none;
         color: #fff;
@@ -127,5 +137,12 @@
      }
      .menu-icons{
         display: block;
+        cursor: pointer;
+    }
+
+
+    .menu-icons i{
+    font-size: 1.2rem;
+    color: #222;
     }
 } 
