@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import Header from '../Header/Header.jsx';
 import hero_image from "../../assets/www.png";
+import Calories from "../../assets/kcal-removebg-preview.png";
 import heart from "../../assets/heartb.png";
 
 const Hero = () => {
@@ -62,8 +63,17 @@ const Hero = () => {
 
                 <img src={hero_image} className='hero-image'/>
 
-            </div>
 
+                <div className="calories">
+                    <img src={Calories}></img>
+                    <div>
+                        <span>Calories Burned</span>
+                        <span>220 kcal</span>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     );
 };
