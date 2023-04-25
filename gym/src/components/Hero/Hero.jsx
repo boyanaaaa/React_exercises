@@ -4,6 +4,7 @@ import Header from '../Header/Header.jsx';
 import hero_image from "../../assets/www.png";
 import Calories from "../../assets/kcal-removebg-preview.png";
 import heart from "../../assets/heartb.png";
+import line from "../../assets/lineb.png";
 
 const Hero = () => {
     return(
@@ -62,6 +63,7 @@ const Hero = () => {
                 </div>
 
                 <img src={hero_image} className='hero-image'/>
+                <img src={line} className='hero-image-back'/>
 
 
                 <div className="calories">
